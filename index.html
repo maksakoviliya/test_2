@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<section>
+		<div class="col-md-12 bottom-desc-bottom" id='content'>
+			<p>
+				Есть модели с питанием от <a href="/katalog/svarochnyj-invertor/na-220v" title="перейти к инверторам на 220 В">220 В</a> для бытовых нужд и небольших производств, а также <a href="/katalog/svarochnyj-invertor/na-380v" title="перейти к инверторам на 380 В">380 В</a> для трехфазной сети, применяемые на крупных предприятиях. Сварочный инвертор используется для ручной дуговой сварки (ММА), а цена оборудования зависит от производителя, максимальной силы выдаваемого тока и дополнительных функций.
+			</p>
+
+			<h3>Преимущества сварочных инверторов</h3>
+
+			<p>
+				Сварочные аппараты инверторного типа обладают следующими преимуществами относительно обычных трансформаторов:
+			</p>
+			<ul>
+				<li>меньшие габариты и вес — удобно для транспортировки и хранения;</li>
+				<li>сварка постоянным током — швы с мелкой чешуей, лучший провар, возможность сваривать не только обычную, но и легированную сталь, чугун;</li>
+				<li>дополнительные функции, облегчающие розжиг и стабильное горение дуги на металлах разной толщины.</li>
+			</ul>
+			<h3>На что обратить внимание при выборе</h3>
+			<p>
+				Решая, какой купить сварочный аппарат с инверторной технологией учитывайте максимальную силу тока: 150-160 А позволят варить металл толщиной до 3 мм, а 200-250 А рассчитаны на металл 5-7 мм. ПВ на максимальном токе укажет, как долго получится варить без перерыва: для непродолжительных работ достаточно значения 30-35%, а для более длительного использования выбирайте модели с показателем от 60%. Функции «Горячий старт» и «Форсаж дуги» облегчат розжиг и помогут сваривать тонкие металлы, что удобно для новичков. Мы предлагаем заказать сварочные инверторы <a href="/katalog/svarochnyj-invertor/kemppi" title="перейти к сварочным инверторам Kemppi">Kemppi</a>, <a href="/katalog/svarochnyj-invertor/ewm" title="перейти к сварочным инверторам EWM">EWM</a>, <a href="/katalog/svarochnyj-invertor/esab" title="перейти к сварочным инверторам ESAB">ESAB</a> с бесплатной доставкой в Москве. Они отличаются высокой надежностью и многочисленными функциями. Бренды <a href="/katalog/svarochnyj-invertor/svarog" title="перейти к сварочным инверторам Сварог">Сварог</a>, <a href="/katalog/svarochnyj-invertor/aurora" title="перейти к сварочным инверторам Aurora">Aurora</a> более доступны и хорошо подходят для сварки дома или в гараже. <a href="/katalog/svarochnyj-invertor/neon" title="перейти к сварочным инверторам NEON">NEON</a>, <a href="/katalog/svarochnyj-invertor/tor" title="перейти к сварочным инверторам Торус">Торус</a>, <a href="/katalog/svarochnyj-invertor/forsazh" title="перейти к сварочным инверторам Форсаж">Форсаж</a> — отличаются средней ценой и простой в использовании.
+			</p>
+			<h3>Популярные модели</h3>
+			<p>При выборе инвертора обратите внимание на популярные модели:</p>
+			<ul>
+				<li><a href="/katalog/svarochnyj-invertor/kemppi/kemppi-minarc-evo-180" title="перейти к KEMPPI Minarc EVO 180">KEMPPI Minarc EVO 180</a> — устойчив к колебаниям напряжения и хорошо подойдет для строительной площадки и питания от бензогенератора.</li> 
+				<li><a href="/katalog/svarochnyj-invertor/ewm/ewm-pico-160" title="перейти к EWM Pico 160">EWM Pico 160</a> — весит всего 4.7 кг и идеален для монтажных работ на высоте.</li> 
+				<li><a href="/katalog/svarochnyj-invertor/svarog/svarog-pro-arc-180" title="перейти к Сварог PRO ARC 180">Сварог PRO ARC 180</a> — отлично подойдет для дачи и выдержит просадки напряжения даже до 160 В.</li>
+				<li><a href="/katalog/svarochnyj-invertor/resanta/resanta-sai-190" title="перейти к Ресанта САИ 190">Ресанта САИ 190</a> — имеет хороший запас мощности и множество функций («Форсаж дуги», «Антизалипание», «Горячий старт») и очень доступную цену.</li>
+			</ul>
+
+		</div>
+		<a href="#" class="btn expand" id="button">Подробнее</a>
+	</section>
+	<script type="text/javascript">
+		var content = document.getElementById('content'),
+			btn = document.getElementById('button')
+			i = 0,
+			className = 'opened',
+			closedText = btn.innerHTML,
+			openedText = 'Скрыть текст';
+
+		function add_class(className) {
+			content.classList.add(className);
+			btn.classList.add(className);
+			i++;
+			btn.innerHTML = openedText;
+		}
+
+		function remove_class(className) {
+			content.classList.remove(className);
+			btn.classList.remove(className);
+			i--;
+			btn.innerHTML = closedText;
+		}
+
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			i == 0 ? add_class(className) : remove_class(className);
+		})
+	</script>
+</body>
+</html>
